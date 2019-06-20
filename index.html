@@ -2,21 +2,28 @@
 <html>
 
 <head>
-  <link rel="stylesheet" href="main.css">
-  <link href='https://fonts.googleapis.com/css?family=Lato:200,300,400,700' rel='stylesheet' type='text/css'>
-<link href="https://fonts.googleapis.com/css?family=Muli:200,300" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="main.css">
+  	<link href='https://fonts.googleapis.com/css?family=Lato:200,300,400,700' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Muli:200,300,400" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<link rel="icon" type="image/png" sizes="64x64" href="assets/app-favicon.png">
+  	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
 </head>
 
 <body>
-	<section class="bg-color-grey banner">
+	<!-- <div class="opaque-background" id="opaque-background"></div> -->
+	<section class="bg-color-hero banner">
 		<div class="container">
 			<div class="row">
-				<div class="col"></div>
-				<div class="col is-5">
-					<img class="profile-pic" src="preston.jpg" alt="Profile Picture">
+				<div class="col">
+					<img id="profile-pic" class="profile-pic" src="profile_photo.jpg" alt="Profile Picture">
+					<img id="qr-code" src="qr.png" alt="QR Code">
 				</div>
-				<div class="col"></div>
+				<div class="col">
+					<a id="share-button" class="share-button"><img src="assets/icon-qr.svg">QR</a>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -25,29 +32,38 @@
 		<div class="container">
 			<div class="row name-title-company">
 				<div class="col is-6">
-					<p class="text-name">Preston Lim</p>
-					<p class="text-title-company">Associate Software Engineer</p>
-					<p class="text-title-company">Data Science Division, GovTech</p>
+					<p class="text-name">Don Lee</p>
+					<p class="text-title-company">Technical Recruiter</p>
+					<p class="text-title-company">Indeed, Singapore Engineering Centre</p>
 				</div>
 				<div class="col">
-					<img src="assets/govtech-logo-blue.svg" alt="Company Logo">
+					<img class="company-logo" src="assets/company_logo.png" alt="Company Logo">
+				</div>
+			</div>
+		</div>
+	</section>
+	
+		<section class="bg-color-white additional-info">
+		<div class="container">
+			<div class="row name-title-company">
+				<div class="col is-2">
+					<a href="https://www.linkedin.com/in/donhnlee">
+						<img src="assets/icon-linkedin.svg">
+					</a>
 				</div>
 			</div>
 		</div>
 	</section>
 
 	<section class="bg-color-white secondary-info">
-		<a href="mailto:preston@data.gov.sg">
+		<a href="mailto:dlee@indeed.com">
 			<div class="container">
 				<div class="row detail">
-					<div class="col">
-						<img src="assets/icon-email.svg" alt="Email Icon"">
-					</div>
-					<div class="col is-8">
-						<p class="text-detail">preston@data.gov.sg</p>
+					<div class="icon-div">
+						<img src="assets/icon-email.svg" />
 					</div>
 					<div class="col">
-						<img src="assets/right-arrow.svg" alt="Right Arrow" height="50%" width="40%">
+						<p class="text-detail">dlee@indeed.com</p>
 					</div>
 				</div>
 			</div>
@@ -55,17 +71,14 @@
 	</section>
 
 	<section class="bg-color-white secondary-info">
-		<a href="tel:+6591234567">
+		<a href="tel:+65 9821 3938">
 			<div class="container">
 				<div class="row detail">
-					<div class="col">
-						<img src="assets/icon-phone.svg" alt="Phone Icon"">
-					</div>
-					<div class="col is-8">
-						<p class="text-detail">(+65) 9123 4567</p>
+					<div class="icon-div">
+						<img src="assets/icon-mobile.svg" />
 					</div>
 					<div class="col">
-						<img src="assets/right-arrow.svg" alt="Right Arrow" height="50%" width="40%">
+						<p class="text-detail">+65 9821 3938</p>
 					</div>
 				</div>
 			</div>
@@ -73,17 +86,14 @@
 	</section>
 
 	<section class="bg-color-white secondary-info">
-		<a href="https://www.tech.gov.sg">
+		<a href="https://www.indeed.jobs/">
 			<div class="container">
 				<div class="row detail">
-					<div class="col">
-						<img src="assets/icon-website.svg" alt="Website Icon"">
-					</div>
-					<div class="col is-8">
-						<p class="text-detail">tech.gov.sg</p>
+					<div class="icon-div">
+						<img src="assets/icon-website.svg" />
 					</div>
 					<div class="col">
-						<img src="assets/right-arrow.svg" alt="Right Arrow" height="50%" width="40%">
+						<p class="text-detail">https://www.indeed.jobs/</p>
 					</div>
 				</div>
 			</div>
@@ -91,19 +101,15 @@
 	</section>
 
 	<section class="bg-color-white secondary-info">
-		<a href="https://www.google.com.sg/maps/place/GovTech+Hive/@1.2998708,103.7871504,17z/
-		data=!3m1!4b1!4m5!3m4!1s0x31da1a457344a501:0x2202a995a6abc728!8m2!3d1.2998708!4d103.7893391">
+		<a href="https://www.google.com/maps/search/?api=1&query=WeWork Beach Centre, 15 Beach Road, #06-00, 189677, Singapore">
 			<div class="container">
 				<div class="row detail">
-					<div class="col">
-						<img src="assets/icon-address.svg" alt="Address Icon"">
-					</div>
-					<div class="col is-8">
-						<p class="text-detail">1 Fusionopolis, Sandcrawler, #09-01, 138577</p>
+					<div class="icon-div">
+						<img src="assets/icon-address.svg" />
 					</div>
 					<div class="col">
-						<img src="assets/right-arrow.svg" alt="Right Arrow" height="50%" width="40%">
-					</div>
+						<p class="text-detail">WeWork Beach Centre, 15 Beach Road, #06-00, 189677, Singapore</p>
+					</div
 				</div>
 			</div>
 		</a>
@@ -112,19 +118,17 @@
 	<section class="bg-color-white bottom">
 		<div class="container">
 			<div class="row">
-				<div class="col"></div>
-				<div class="col is-5">
-					<div class="button">
-						<a href="user.vcf">
-							<p class="button">Download</p>
-						</a>
-					</div>
+				<div class="col horizontal-center-child">
+					<a href="user.vcf">
+						<button class="button">
+							Save Contact
+						</button>
+					</a>
 				</div>
-				<div class="col"></div>
 			</div>
 		</div>
 	</section>
-
+<script src="main.js"></script>
 </body>
 
 </html>
